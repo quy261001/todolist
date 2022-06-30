@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <router-link class="btn-link" to="/Todolist"> 
+      <button class="btn">TODOLIST</button>
+    </router-link>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+<style scoped>
+  .btn {
+    border: none;
+    padding:15px;
+    background-color:rgb(109, 220, 109);
+    border-radius: 4px;
+    display: block;  
+    max-width: 500px;
+    margin: 100px auto;
+    cursor: pointer;
   }
-}
-</script>
+
+  .btn-link {
+    text-decoration: none;
+    color:#000;
+  }
+</style>
